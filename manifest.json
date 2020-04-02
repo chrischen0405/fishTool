@@ -1,0 +1,22 @@
+{
+  "name": "Fish Tool",
+  "description" : "my fish tool",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": "fish.png"
+  },
+  "background": {
+    "scripts": ["js/background.js"]
+  },
+  "content_scripts": [{
+    "matches": ["http://www.zhihu.com/*","https://www.zhihu.com/*"],
+    "js": ["js/js.js"],
+    "css": ["css/css.css"],
+    "run_at": "document_start"
+  }],
+  "permissions": [
+    "tabs", "http://www.zhihu.com/*", "https://www.zhihu.com/*"
+  ]
+}
