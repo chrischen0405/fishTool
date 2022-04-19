@@ -5,16 +5,28 @@ window.onload = function () {
             chrome.tabs.executeScript(tabId, {code: `document.title=''`})
         })
     })
-    let cssBtn = document.getElementById('css')
-    let css = true
-    chrome.storage.local.get({ css: true }, res => {
-        css = res.css
-        cssBtn.innerText = `${css ? '关闭' : '开启'}`
+    let isShowHeaderBtn = document.getElementById('isShowHeader')
+    let isShowHeader = false
+    let isShowSidebarBtn = document.getElementById('isShowSidebar')
+    let isShowSidebar = false
+    chrome.storage.local.get({
+        isShowHeader: false,
+        isShowSidebar: false
+    }, res => {
+        isShowHeader = res.isShowHeader
+        isShowSidebar = res.isShowSidebar
+        isShowHeaderBtn.innerText = `${isShowHeader ? '头部隐藏' : '头部显示'}`
+        isShowSidebarBtn.innerText = `${isShowSidebar ? '侧边栏隐藏' : '侧边栏显示'}`
     })
-    cssBtn.addEventListener('click', () => {
-        css = !css
-        cssBtn.innerText = `${css ? '关闭' : '开启'}`
-        chrome.storage.local.set({ css })
+    isShowHeaderBtn.addEventListener('click', () => {
+        isShowHeader = !isShowHeader
+        isShowHeaderBtn.innerText = `${isShowHeader ? '头部隐藏' : '头部显示'}`
+        chrome.storage.local.set({ isShowHeader })
+    })
+    isShowSidebarBtn.addEventListener('click', () => {
+        isShowSidebar = !isShowSidebar
+        isShowSidebarBtn.innerText = `${isShowSidebar ? '侧边栏隐藏' : '侧边栏显示'}`
+        chrome.storage.local.set({ isShowSidebar })
     })
 }
 

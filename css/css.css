@@ -1,28 +1,3 @@
-/*知乎头部*/
-.AppHeader {
-    display: none;!important;
-}
-.ColumnPageHeader-Wrapper {
-    display: none;!important;
-}
-/*知乎侧边栏*/
-.GlobalSideBar {
-    display: none;!important;
-}
-.Question-sideColumn {
-    display: none;!important;
-}
-/*知乎主内容占满屏幕*/
-.App-main .Topstory-mainColumn {
-    width: 100%;!important;
-}
-.Question-main .Question-mainColumn {
-    width: 100%;!important;
-}
-/*主内容头部大图隐藏*/
-.Topstory-mainColumn > a {
-    display: none;!important;
-}
 /*隐藏广告*/
 .Topstory-recommend .TopstoryItem--advertCard {
     display: none;!important;

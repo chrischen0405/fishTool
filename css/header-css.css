@@ -1,0 +1,11 @@
+/*知乎头部*/
+.AppHeader {
+    display: none;!important;
+}
+.ColumnPageHeader-Wrapper {
+    display: none;!important;
+}
+/*主内容头部大图隐藏*/
+.Topstory-mainColumn > a {
+    display: none;!important;
+}

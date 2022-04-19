@@ -1,0 +1,14 @@
+/*知乎侧边栏*/
+.GlobalSideBar {
+    display: none;!important;
+}
+.Question-sideColumn {
+    display: none;!important;
+}
+/*知乎主内容占满屏幕*/
+.App-main .Topstory-mainColumn {
+    width: 100%;!important;
+}
+.Question-main .Question-mainColumn {
+    width: 100%;!important;
+}
