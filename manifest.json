@@ -1,7 +1,7 @@
 {
   "name": "Fish Tool",
   "description" : "my fish tool",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "manifest_version": 2,
   "browser_action": {
     "default_popup": "popup.html",

@@ -2,7 +2,7 @@ window.onload = function () {
     let clearBtn = document.getElementById('clear')
     clearBtn.addEventListener('click', () => {
         getCurrentTabId((tabId) => {
-            chrome.tabs.executeScript(tabId, {code: `document.title=''`})
+            chrome.tabs.executeScript(tabId, {code: `document.title='新标签页'`})
         })
     })
     let isShowHeaderBtn = document.getElementById('isShowHeader')
