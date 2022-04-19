@@ -12,3 +12,14 @@
 .Question-main .Question-mainColumn {
     width: 100%;!important;
 }
+/*列表回答视频*/
+.VideoAnswerPlayer {
+    width: 300px;!important;
+}
+.ZVideoItem-video {
+    width: 300px;!important;
+}
+/*详情回答图片*/
+figure {
+    width: 300px;!important;
+}

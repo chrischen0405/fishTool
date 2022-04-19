@@ -1,8 +1,3 @@
-const domainList = [
-    'https://www.zhihu.com/',
-    'http://www.zhihu.com/'
-]
-
 chrome.tabs.onUpdated.addListener(function(tabId, info, tab) {
     console.log('onUpdated', tabId, info, tab)
     if (info.status === 'loading') {
@@ -22,7 +17,7 @@ chrome.tabs.onUpdated.addListener(function(tabId, info, tab) {
 
 function insertCss (tab, file) {
     let tabUrl = tab ? tab.url : null
-    if (tabUrl && domainList.includes(tabUrl)) {
+    if (tabUrl && tabUrl.indexOf('zhihu') !== -1) {
         chrome.tabs.insertCSS(tab.id, {
             file
         })

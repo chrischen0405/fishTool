@@ -1,7 +1,7 @@
 {
   "name": "Fish Tool",
   "description" : "my fish tool",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "manifest_version": 2,
   "browser_action": {
     "default_popup": "popup.html",
@@ -30,7 +30,9 @@
     "tabs",
     "activeTab",
     "http://www.zhihu.com/*",
-    "https://www.zhihu.com/*"
+    "https://www.zhihu.com/*",
+    "http://zhuanlan.zhihu.com/*",
+    "https://zhuanlan.zhihu.com/*"
   ],
   "homepage_url": "https://github.com/chrischen0405/fishTool"
 }
