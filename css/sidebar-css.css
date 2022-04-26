@@ -12,6 +12,10 @@
 .Question-main .Question-mainColumn {
     width: 100%;!important;
 }
+/*知乎问题回答页面主内容*/
+.Question-main .ListShortcut {
+    width: 100%;!important;
+}
 /*列表回答视频*/
 .VideoAnswerPlayer {
     width: 300px;!important;
