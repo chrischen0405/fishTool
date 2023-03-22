@@ -18,8 +18,11 @@ chrome.tabs.onUpdated.addListener(function(tabId, info, tab) {
 function insertCss (tab, file) {
     let tabUrl = tab ? tab.url : null
     if (tabUrl && tabUrl.indexOf('zhihu') !== -1) {
-        chrome.tabs.insertCSS(tab.id, {
-            file
+        chrome.scripting.insertCSS({
+            target: {
+                tabId: tab.id
+            },
+            files: [file]
         })
     }
 }
