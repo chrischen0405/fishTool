@@ -1,3 +1,6 @@
+const manifestData = chrome.runtime.getManifest()
+document.getElementById('title').innerText = manifestData.version
+
 window.onload = function () {
     let clearBtn = document.getElementById('clear')
     clearBtn.addEventListener('click', () => {
