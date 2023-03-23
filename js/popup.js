@@ -2,7 +2,12 @@ window.onload = function () {
     let clearBtn = document.getElementById('clear')
     clearBtn.addEventListener('click', () => {
         getCurrentTabId((tabId) => {
-            chrome.tabs.executeScript(tabId, {code: `document.title='新标签页'`})
+            chrome.scripting.executeScript({
+                target: {
+                    tabId
+                },
+                func: clearTitle
+            })
         })
     })
     let isShowHeaderBtn = document.getElementById('isShowHeader')
@@ -39,4 +44,9 @@ function getCurrentTabId(callback) {
     }, function(tabs) {
         if(callback) callback(tabs.length ? tabs[0].id : null)
     })
+}
+
+// 清空标题
+function clearTitle () {
+    document.title='新标签页'
 }
