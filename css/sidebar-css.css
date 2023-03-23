@@ -12,7 +12,7 @@
 .Question-main .Question-mainColumn {
     width: 100%;!important;
 }
-/*知乎问题回答页面主内容*/
+/*知乎问题回答页面https://www.zhihu.com/question主内容*/
 .Question-main .ListShortcut {
     width: 100%;!important;
 }
@@ -26,4 +26,11 @@
 /*详情回答图片*/
 figure {
     width: 300px;!important;
+}
+/*知乎搜索https://www.zhihu.com/search侧边栏*/
+.App-main .css-knqde {
+    display: none;
+}
+.App-main .SearchMain {
+    width: 100%;
 }
