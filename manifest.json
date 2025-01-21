@@ -1,7 +1,7 @@
 {
   "name": "Fish Tool",
   "description" : "my fish tool",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "manifest_version": 3,
   "author": "chrischen0405",
   "action": {
