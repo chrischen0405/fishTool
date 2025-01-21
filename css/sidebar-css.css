@@ -1,36 +1,45 @@
 /*知乎侧边栏*/
 .GlobalSideBar {
-    display: none;!important;
+  display: none !important;
 }
+
 .Question-sideColumn {
-    display: none;!important;
+  display: none !important;
 }
+
 /*知乎主内容占满屏幕*/
 .App-main .Topstory-mainColumn {
-    width: 100%;!important;
+  width: 100% !important;
 }
+
 .Question-main .Question-mainColumn {
-    width: 100%;!important;
+  width: 100% !important;
 }
+
 /*知乎问题回答页面https://www.zhihu.com/question主内容*/
 .Question-main .ListShortcut {
-    width: 100%;!important;
+  width: 100% !important;
 }
+
 /*列表回答视频*/
 .VideoAnswerPlayer {
-    width: 300px;!important;
+  width: 300px !important;
 }
+
 .ZVideoItem-video {
-    width: 300px;!important;
+  width: 300px !important;
 }
+
 /*详情回答图片*/
 figure {
-    width: 300px;!important;
+  width: 300px !important;
 }
+
 /*知乎搜索https://www.zhihu.com/search侧边栏*/
 .App-main .css-knqde {
-    display: none;
+  display: none;
 }
+
 .App-main .SearchMain {
-    width: 100%;
+  width: 100%;
 }
