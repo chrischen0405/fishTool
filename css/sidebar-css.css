@@ -7,6 +7,11 @@
   display: none !important;
 }
 
+/* 知乎首页右边侧边栏隐藏 */
+[data-za-detail-view-path-module="RightSideBar"] {
+  display: none !important;
+}
+
 /*知乎主内容占满屏幕*/
 .App-main .Topstory-mainColumn {
   width: 100% !important;
