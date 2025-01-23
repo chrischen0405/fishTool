@@ -11,3 +11,7 @@
 .Topstory-mainColumn>a {
   display: none !important;
 }
+
+.Pc-Business-Card-PcTopFeedBanner {
+  display: none !important;
+}
