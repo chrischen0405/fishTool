@@ -2,3 +2,7 @@
 .Topstory-recommend .TopstoryItem--advertCard {
   display: none !important;
 }
+
+.List .Pc-word {
+  display: none !important;
+}
