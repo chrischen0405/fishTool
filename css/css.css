@@ -6,3 +6,7 @@
 .List .Pc-word {
   display: none !important;
 }
+
+.Pc-word-new {
+  display: none !important;
+}
